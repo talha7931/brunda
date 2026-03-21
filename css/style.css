@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top:100px;
 }
 
 body {
@@ -17,10 +18,12 @@ body {
 /* Navbar */
 .welcoming {
   position: fixed;
-  top: 20px;
+  top: 15px;
+  left: 20%;
+  right:20px;
   width: 100%;
  justify-content:space-between;
-  padding: 20px 20px;
+  padding: 59px 20px;
   z-index: 100;
   flex-direction:column;
 }
@@ -73,6 +76,7 @@ nav a:hover::after {
 .hero p {
   font-size: 20px;
   margin: 15px 0;
+  padding:20px;
 }
 
 .btn {
@@ -95,7 +99,7 @@ nav a:hover::after {
 .socials i {
   background: #000;
   color: #00e5ff;
-  padding: 12px;
+  padding: 15px;
   margin-right: 10px;
   border-radius: 50%;
   cursor: pointer;
@@ -112,12 +116,14 @@ nav a:hover::after {
   height: 180px;
   flex-shrink:0;
   overflow: hidden;
+  box-shadow: 0 0 15px #00e5ff;
+  
   border-radius:50%;
 }
 @media (max-width: 768px) {
 
   .welcoming {
-    padding: 15px;
+    padding: 59x 10px;
     text-align: center;
   }
 
@@ -141,8 +147,9 @@ nav a:hover::after {
   }
 
   .image {
-    width: 120px;
-    height: 120px;
+    box-shadow:0 0 15px #00e5ff;
+    width: 180px;
+    height: 180px;
     margin-top: 0;
   }
 
@@ -158,14 +165,14 @@ nav a:hover::after {
   }
   .portfolio-label{
     font-size:18px;
-    top:15px;
-    right:15px;
+    top:25px;
+    right:25px;
   }
   nav{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:10px;
+    gap:8px;
   }
 }
 .image img {
@@ -238,8 +245,8 @@ font-weight:750;
 }
 .portfolio-label {
   position: fixed;       /* stay in place while scrolling */
-  top: 30px;             /* distance from top */
-  right: 30px;           /* distance from right edge */
+  top: 25px;             /* distance from top */
+  right: 45px;           /* distance from right edge */
   font-size: 24px;       /* adjust size */
   font-weight: bold;     
   color: #eceef5;        /* matches your theme */
