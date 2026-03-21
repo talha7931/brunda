@@ -32,6 +32,7 @@ nav a {
   margin-left: 45px;
   color: #fffeff;
   font-weight: 500;
+  font-size: 15px;
   text-decoration: none;
   position: relative;
 }
@@ -123,12 +124,18 @@ nav a:hover::after {
 @media (max-width: 768px) {
 
   .welcoming {
+    left:10px;
+    right:10px;
     padding: 59x 10px;
     text-align: center;
   }
+  .portfolio-labl{
+     color:#574791;
+  }
 
   nav a {
-    margin: 10px;
+    font-size: 18px;
+    margin: 0px;
     display: inline-block;
   }
 
@@ -164,6 +171,7 @@ nav a:hover::after {
     font-size: 16px;
   }
   .portfolio-label{
+    text-decoration: grey;
     font-size:18px;
     top:25px;
     right:25px;
@@ -171,8 +179,9 @@ nav a:hover::after {
   nav{
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
-    gap:8px;
+    justify-content:space-evenly;
+    align-items:center;
+    gap:12px;
   }
 }
 .image img {
@@ -252,6 +261,7 @@ font-weight:750;
   color: #eceef5;        /* matches your theme */
   z-index: 1000;         /* ensure it’s on top */
   pointer-events: none;  /* allows clicks to pass through */
+  color:#574791;
 }
 .coo{
   color:rgb(5, 5, 49);
