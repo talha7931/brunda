@@ -156,6 +156,17 @@ nav a:hover::after {
     padding: 40px 20px;
     font-size: 16px;
   }
+  .portfolio-label{
+    font-size:18px;
+    top:15px;
+    right:15px;
+  }
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+  }
 }
 .image img {
   width: 100%;
@@ -166,14 +177,15 @@ nav a:hover::after {
 }
 /* Make each section full viewport height and add padding */
 .section {
-  min-height: 90vh;        /* each section fills the screen */
-  padding:  80px;      /* space inside section */
+  min-height: 100vh;        /* each section fills the screen */
+  padding: 80px 20px ;      /* space inside section */
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* Background and text colors for each section */
 #home {
-  background-color: #103236;  /* dark blue */
+  background-color: #103236;
+  min-height:100vh;  /* dark blue */
   color: #fff;                 /* white text for contrast */
 }
 
