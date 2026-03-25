@@ -209,23 +209,34 @@ nav a.active::after, nav a:hover::after {
 
 /* Media Queries for very small screens */
 @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 20px; /* Header is no longer fixed, less offset needed */
+  }
+
   .welcoming {
-    padding: 15px 5%;
+    position: relative; /* Removes fixed position so it scrolls away naturally */
+    padding: 25px 5% 15px 5%;
   }
 
   nav {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
 
   .portfolio-label {
     position: static;
+    width: 100%;
+    text-align: center;
     margin-bottom: 5px;
-    color: #574791;
+    font-size: 1.8rem;
+    color: #eceef5;
   }
 
   .section {
-    padding: 120px 5% 40px 5%;
+    padding: 60px 5% 40px 5%;
+    min-height: auto;
   }
 
   .section h2 {
